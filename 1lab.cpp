@@ -20,7 +20,7 @@ struct coord
 };
 int main()
 {
-//Решение 5ой задачи
+    //Решение 5ой задачи
     std::cout << "Решение задачи №5" << std::endl << "Введите координаты точки A" << std::endl;
     coord A;
     A.print();
@@ -35,10 +35,9 @@ int main()
     double mC = sqrt(((B.Y+A.Y)/2.0 - C.Y)*((B.Y+A.Y)/2.0 - C.Y) + ((B.X+A.X)/2.0 - C.X)*((B.X+A.X)/2.0 - C.X));
     std::cout << "Медиана A = " << mA << "\tМедиана B = " << mB << "\tМедиана C = " << mC << std::endl;
     //Решение 25ой задачи
-    double X, Y;
+    double X;
     std::cout << "Решение задачи №25" << std::endl << "Введите Х" << std::endl;
     std::cin >> X;
-    Y = log(X) * log(X) + (X * X * X) / 3.0;
-    std::cout << "Y = " << Y;
+    std::cout << "Y = " << log(X) * log(X) + (X * X * X) / 3.0;
     return 0;
 }
